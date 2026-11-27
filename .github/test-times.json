@@ -108,7 +108,8 @@
     "ubuntu-latest / Python 3.15": {
       "tests/test_conftest.py": [
         11.83,
-        15.39
+        15.39,
+        6.89
       ],
       "tests/test_freshness_reach.py": [
         1.57
