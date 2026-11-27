@@ -227,7 +227,8 @@ def test_gate_paths_on_this_repository():
 
 
 PINNED = [
-    '.github/PULL_REQUEST_TEMPLATE.md', '.github/dependabot.yml', '.github/test-times.json',
+    '.github/PULL_REQUEST_TEMPLATE.md', '.github/ci-thresholds.json', '.github/dependabot.yml',
+    '.github/test-times.json',
     '.github/workflows/actionlint.yml', '.github/workflows/audit.yml',
     '.github/workflows/claim.yml', '.github/workflows/codeql.yml',
     '.github/workflows/comment-share.yml', '.github/workflows/lint.yml',
