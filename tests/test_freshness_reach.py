@@ -227,8 +227,8 @@ def test_gate_paths_on_this_repository():
 
 
 PINNED = [
-    '.github/PULL_REQUEST_TEMPLATE.md', '.github/ci-thresholds.json', '.github/dependabot.yml',
-    '.github/test-times.json', '.github/workflows/actionlint.yml', '.github/workflows/audit.yml',
+    '.github/PULL_REQUEST_TEMPLATE.md', '.github/dependabot.yml', '.github/test-times.json',
+    '.github/workflows/actionlint.yml', '.github/workflows/audit.yml',
     '.github/workflows/claim.yml', '.github/workflows/codeql.yml',
     '.github/workflows/comment-share.yml', '.github/workflows/lint.yml',
     '.github/workflows/pin-guard.yml', '.github/workflows/pr-gate.yml',
@@ -239,10 +239,7 @@ PINNED = [
     '.pylintrc', 'LICENSE', 'README.md', 'SECURITY.md', 'action.yml', 'pyright-baseline.json',
     'pyrightconfig.json', 'requirements-actionlint.txt', 'requirements-lint.txt',
     'requirements-pip-audit.txt', 'requirements-test.txt', 'requirements-zizmor.txt',
-    'scripts/ci/commit_scopes.py', 'scripts/ci/freshness_reach.py',
-    'scripts/ci/freshness_workflows.py', 'scripts/ci/gate_base_freshness.py',
-    'scripts/ci/pr_attribution.py', 'scripts/ci/pr_body.py', 'scripts/ci/pr_body_closing.py',
-    'scripts/ci/pr_commits.py', 'scripts/ci/pr_content.py', 'scripts/ci/pr_gate.py',
-    'scripts/ci/pr_policy.py', 'scripts/ci/release_dispatch.py', 'scripts/ci/type_ratchet.py',
-    'setup.cfg',
+    'scripts/ci/freshness_reach.py', 'scripts/ci/freshness_workflows.py',
+    'scripts/ci/gate_base_freshness.py', 'scripts/ci/release_dispatch.py',
+    'scripts/ci/type_ratchet.py', 'setup.cfg',
 ]
