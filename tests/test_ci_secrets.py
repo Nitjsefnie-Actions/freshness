@@ -64,7 +64,8 @@ def test_secrets_scans_full_history_from_a_trusted_config(tmp):
         r"echo '[0-9a-f]{64}  " + re.escape(tarball) + r"' \| sha256sum -c -",
         lines[-3]), 'the download must be verified against a sha256 digest'
     assert lines[-2:] == [f'tar xzf {tarball} gitleaks', './gitleaks version']
-    assert set(steps[2]['env']) == {'FRESHNESS_EVENT_NAME', 'FRESHNESS_BASE_SHA', 'FRESHNESS_BEFORE_SHA'}
+    assert set(steps[2]['env']) == {
+        'FRESHNESS_EVENT_NAME', 'FRESHNESS_BASE_SHA', 'FRESHNESS_BEFORE_SHA'}
     scan = steps[3]
     assert 'if' not in scan and 'continue-on-error' not in scan
     assert '||' not in scan['run'], 'no error-swallowing fallback may weaken the gate'
@@ -156,8 +157,10 @@ def test_the_trusted_config_step_reads_the_trusted_event_commit(tmp):
         result = subprocess.run(
             [_action_bash(), '-e', str(script)], cwd=repo, capture_output=True,
             text=True, timeout=120, env={**os.environ, 'RUNNER_TEMP': str(runner),
-                                         'BASH_ENV': str(bash_env), 'FRESHNESS_EVENT_NAME': event,
-                                         'FRESHNESS_BASE_SHA': base, 'FRESHNESS_BEFORE_SHA': before})
+                                         'BASH_ENV': str(bash_env),
+                                         'FRESHNESS_EVENT_NAME': event,
+                                         'FRESHNESS_BASE_SHA': base,
+                                         'FRESHNESS_BEFORE_SHA': before})
         copy_dir = runner / 'gitleaks-trusted'
         return (result, (copy_dir / '.gitleaks.toml').read_text(encoding='utf-8'),
                 (copy_dir / '.gitleaksignore').read_text(encoding='utf-8'))

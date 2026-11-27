@@ -207,7 +207,8 @@ def _push_run(tmp, *, empty=False, stale=False, unchanged=False, push_status=0,
         'LOCAL_REMOTE': str(repo), 'GIT_LOG': str(log), 'KEY_INPUT': str(tmp / 'key'),
         'AGENT_CLEANUP': str(tmp / 'cleanup'), 'RUNNER_TEMP': str(tmp),
         'GITHUB_STEP_SUMMARY': str(summary), 'FRESHNESS_REPO': 'owner/repo',
-        'FRESHNESS_MASTER_PUSH_DEPLOY_KEY': '' if empty else ''.join(chr(c) for c in (102, 105, 120)),
+        'FRESHNESS_MASTER_PUSH_DEPLOY_KEY': (
+            '' if empty else ''.join(chr(c) for c in (102, 105, 120))),
         'PUSH_STATUS': str(push_status), 'MOVE_ON_PUSH': str(move_on_push).lower()}, tmp)
     calls = [json.loads(line) for line in log.read_text().splitlines()] if log.exists() else []
     commands = [call[2:] if call[:1] == ['-C'] else call for call in calls]
