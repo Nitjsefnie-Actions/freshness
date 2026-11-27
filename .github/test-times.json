@@ -1,0 +1,226 @@
+{
+  "schema_version": 2,
+  "cells": {
+    "macos-latest / Python 3.14": {
+      "tests/test_ci_secrets.py": [
+        1.86
+      ],
+      "tests/test_conftest.py": [
+        4.65,
+        7.85,
+        10.52,
+        18.98
+      ],
+      "tests/test_freshness_reach.py": [
+        3.43
+      ],
+      "tests/test_freshness_required_checks.py": [
+        1.1
+      ],
+      "tests/test_gate_base_freshness.py": [
+        17.12,
+        12.45,
+        7.33,
+        23.85
+      ],
+      "tests/test_ratchet_push.py": [
+        30.06,
+        46.24,
+        64.94
+      ],
+      "tests/test_release_dispatch.py": [
+        1.42
+      ],
+      "tests/test_type_ratchet.py": [
+        0.23
+      ],
+      "tests/test_workflows.py": [
+        3.04,
+        1.99
+      ]
+    },
+    "macos-latest / Python 3.15": {
+      "tests/test_ci_secrets.py": [
+        1.86,
+        3.12
+      ],
+      "tests/test_conftest.py": [
+        7.7,
+        11.79,
+        16.43,
+        4.58
+      ],
+      "tests/test_freshness_reach.py": [
+        2.84
+      ],
+      "tests/test_freshness_required_checks.py": [
+        1.12
+      ],
+      "tests/test_gate_base_freshness.py": [
+        12.21,
+        17.44,
+        7.16,
+        22.43
+      ],
+      "tests/test_ratchet_push.py": [
+        47.33,
+        65.29,
+        32.59
+      ],
+      "tests/test_release_dispatch.py": [
+        0.9
+      ],
+      "tests/test_type_ratchet.py": [
+        0.38
+      ],
+      "tests/test_workflows.py": [
+        2.09,
+        3.49
+      ]
+    },
+    "ubuntu-latest / Python 3.14": {
+      "tests/test_ci_secrets.py": [
+        1.24
+      ],
+      "tests/test_conftest.py": [
+        14.91,
+        10.0
+      ],
+      "tests/test_freshness_reach.py": [
+        0.96
+      ],
+      "tests/test_freshness_required_checks.py": [
+        1.02
+      ],
+      "tests/test_gate_base_freshness.py": [
+        6.91,
+        4.96,
+        3.67
+      ],
+      "tests/test_ratchet_push.py": [
+        54.94,
+        37.87
+      ],
+      "tests/test_release_dispatch.py": [
+        1.02
+      ],
+      "tests/test_type_ratchet.py": [
+        0.46
+      ],
+      "tests/test_workflows.py": [
+        2.52,
+        1.34
+      ]
+    },
+    "ubuntu-latest / Python 3.15": {
+      "tests/test_ci_secrets.py": [
+        1.54
+      ],
+      "tests/test_conftest.py": [
+        11.83,
+        15.39
+      ],
+      "tests/test_freshness_reach.py": [
+        1.57
+      ],
+      "tests/test_freshness_required_checks.py": [
+        0.63
+      ],
+      "tests/test_gate_base_freshness.py": [
+        5.5,
+        3.99,
+        7.18
+      ],
+      "tests/test_ratchet_push.py": [
+        35.41,
+        45.51,
+        58.29
+      ],
+      "tests/test_release_dispatch.py": [
+        0.54
+      ],
+      "tests/test_type_ratchet.py": [
+        0.45
+      ],
+      "tests/test_workflows.py": [
+        1.81,
+        2.96
+      ]
+    },
+    "windows-latest / Python 3.14": {
+      "tests/test_ci_secrets.py": [
+        4.02,
+        5.54
+      ],
+      "tests/test_conftest.py": [
+        14.93,
+        21.48,
+        10.7
+      ],
+      "tests/test_freshness_reach.py": [
+        10.93
+      ],
+      "tests/test_freshness_required_checks.py": [
+        1.69
+      ],
+      "tests/test_gate_base_freshness.py": [
+        32.06,
+        45.13
+      ],
+      "tests/test_ratchet_push.py": [
+        123.59,
+        91.87,
+        62.93
+      ],
+      "tests/test_release_dispatch.py": [
+        2.0,
+        0.98
+      ],
+      "tests/test_type_ratchet.py": [
+        0.79
+      ],
+      "tests/test_workflows.py": [
+        7.03,
+        8.9,
+        12.38,
+        5.07
+      ]
+    },
+    "windows-latest / Python 3.15": {
+      "tests/test_ci_secrets.py": [
+        5.89,
+        4.05
+      ],
+      "tests/test_conftest.py": [
+        13.82,
+        19.3
+      ],
+      "tests/test_freshness_reach.py": [
+        10.04
+      ],
+      "tests/test_freshness_required_checks.py": [
+        2.09
+      ],
+      "tests/test_gate_base_freshness.py": [
+        38.95,
+        28.68
+      ],
+      "tests/test_ratchet_push.py": [
+        84.22,
+        121.55
+      ],
+      "tests/test_release_dispatch.py": [
+        1.47,
+        2.63
+      ],
+      "tests/test_type_ratchet.py": [
+        0.7
+      ],
+      "tests/test_workflows.py": [
+        5.59,
+        8.62,
+        10.99
+      ]
+    }
+  }
+}

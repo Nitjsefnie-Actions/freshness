@@ -1,0 +1,10 @@
+{
+  "trees": {
+    "tests/": 2668
+  },
+  "schema_version": 1,
+  "baseline": {
+    "tests/test_gate_base_freshness.py": 630,
+    "tests/test_ratchet_push.py": 516
+  }
+}
