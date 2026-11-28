@@ -28,6 +28,12 @@ The `require-ci-aggregate` ruleset requires each CI context by name, as
 claim's and pr-gate's do, so `tests.yml` has no aggregate job; no shell file
 is tracked, so there is no shellcheck job.
 
+The `actionlint` job runs the freshness script inline, like
+`action.yml`'s step but not through `uses: ./`: `gate_base_freshness.py` reads a
+`uses: ./` step as reading every tracked file, so every commit to `main`,
+the ratchet records included, would fail every open pull request until it
+rebases.
+
 Run these from the repository root with the virtual environment active:
 
 ```bash
