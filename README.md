@@ -21,7 +21,7 @@ substitute a mutable branch or tag.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: Nitjsefnie-Actions/freshness@<sha> # vX.Y.Z
+      - uses: Nitjsefnie-Actions/freshness@5edc2a45ff894cf49c5cc8d293bbae0af33507d4 # v1.0.0
 ```
 
 Put the step in a job the required aggregate already folds: a new job is a new
