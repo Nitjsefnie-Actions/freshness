@@ -124,6 +124,8 @@ jobs:
           export FRESHNESS_REQUIRED_CHECKS
           python3 scripts/ci/gate_base_freshness.py
 
+      - uses: Nitjsefnie-Actions/commit-scopes@645ca8f43b00199cebeed7a5d305b4224e902a60 # v1.0.0
+
       - name: Install actionlint
         # Downloaded and checksum-verified rather than piped from the
         # install script: `curl | bash` would make this job trust whatever
