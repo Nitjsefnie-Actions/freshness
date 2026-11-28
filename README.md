@@ -24,10 +24,10 @@ substitute a mutable branch or tag.
       - uses: Nitjsefnie-Actions/freshness@5edc2a45ff894cf49c5cc8d293bbae0af33507d4 # v1.0.0
 ```
 
-Put the step in a job the required aggregate already folds: a new job is a new
-required context only once the ruleset or the aggregate names it, and a
-`paths:` filter on a workflow with a required job stops that check reporting
-and blocks every pull request instead.
+Put the step in a job that is already a required check: a new job is a new
+required context only once the ruleset names it, and a `paths:` filter on a
+workflow with a required job stops that check reporting and blocks every pull
+request instead.
 
 ## What it checks
 

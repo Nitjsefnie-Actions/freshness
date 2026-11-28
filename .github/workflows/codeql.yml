@@ -80,9 +80,9 @@ jobs:
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
-          # security-extended over the default pack: the scripts/ modules
-          # parse the untrusted PR text and act on it with the consumer's
-          # token, so the deeper queries belong in every matrix entry.
+          # security-extended over the default pack: scripts/ci parses the
+          # head's workflows and publishes tags with a write token, so the
+          # deeper queries belong in every matrix entry.
           queries: security-extended
       - name: Analyze
         uses: github/codeql-action/analyze@915412ff23e8b7659517e607487dbeae018f2934 # v4.39.5
