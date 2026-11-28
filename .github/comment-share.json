@@ -8,12 +8,12 @@
     7687
   ],
   ".github/workflows/audit.yml": [
-    2996,
-    4881
+    2754,
+    4660
   ],
   ".github/workflows/codeql.yml": [
-    1828,
-    2741
+    1820,
+    2733
   ],
   ".github/workflows/lint.yml": [
     1464,
@@ -32,12 +32,12 @@
     4625
   ],
   ".github/workflows/tests.yml": [
-    475,
-    2522
+    451,
+    2556
   ],
   ".github/workflows/types.yml": [
-    1307,
-    2867
+    1247,
+    2907
   ],
   "scripts/ci/gate_base_freshness.py": [
     7266,
