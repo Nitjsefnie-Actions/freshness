@@ -103,7 +103,10 @@ Co-Authored-By: GPT-6 Astra <noreply@openai.com>
 Substitute the model that actually authored the work; omit effort or context
 suffixes. Stage explicit paths, keep commits focused, and verify before
 pushing. Commit subjects follow Conventional Commits (`type: summary`, with an
-optional scope); take the scope from the file or area the commit is about.
+optional scope); a workflow's `name:` under `.github/workflows/` is a scope
+only with the `ci` type, and the commit-scopes step of the `actionlint` job
+refuses any other type on that scope; take any other scope from the file or
+area the commit is about.
 Published action revisions are immutable commit SHAs; do not create mutable
 release tags as a substitute for reviewable pins.
 
